@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">Change Image</button><br>
+    <img id="image" src="image-1.jpg" alt="" style="height: 500px; width: auto;">
+    
+
+
+<script>
+    const buttonClick = document.getElementById('button');
+    const changeImg = document.getElementById('image');
+
+    buttonClick.onclick = function(){
+        changeImg.src = "image-2.jpg";
+    }
+
+
+</script>
+
+
+</body>
+</html>

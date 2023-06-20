@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="p-specific" id="p-1">Paragraph 1</p>
+    <p class="p-2" id="p-2">Paragraph 2</p>
+    <p class="p-specific" id="p-3">Paragraph 3</p>
+    
+
+<script>
+
+const paras = document.querySelectorAll('.p-specific');
+
+// for (let para of paras){
+//     para.style.color = 'red';
+// }
+
+paras.forEach(para => {
+    para.style.color = 'red';
+})
+
+</script>
+
+
+</body>
+</html>

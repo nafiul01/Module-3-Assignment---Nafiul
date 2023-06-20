@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button id="button">Click</button>
+
+<script>
+
+let url = "https://google.com";
+let width = 800;
+let height = 600;
+const openButton = document.getElementById('button');
+
+
+function newWindow() {
+    let dimension = `"width=${width}, height=${height}"`;
+    window.open(url,  "", dimension);
+ }
+
+openButton.addEventListener('click', newWindow);
+
+</script>
+
+</body>
+</html>
+
+

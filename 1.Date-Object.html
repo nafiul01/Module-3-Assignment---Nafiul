@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+    
+let date = new Date();
+
+let year = date.getFullYear();
+let month = date.getMonth();
+let day = date.getDate();
+
+let dateFormat = `${year}-${month}-${day}`;
+// console.log(dateFormat);
+
+let dayOfTheWeek = function (dateFormat){
+    let updateDate = new Date(dateFormat);
+    let day = updateDate.getDay();
+    let dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday'];
+    return dayNames[day];
+}
+
+// console.log('The Day is = '+ dayOfTheWeek(date));
+document.write('The Day is = '+ dayOfTheWeek(date));
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
